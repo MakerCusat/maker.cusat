@@ -127,7 +127,10 @@ a:hover, #header.nav-solid nav a:hover {
     background: url("../images/banner-images/banner-image-1.jpg") no-repeat center top;
     background-size:cover;
 }
-
+#banner1 {
+    background: url("../images/banner-images/proteus.png") no-repeat center top;
+    background-size:cover;
+}
 
 /*------------------------------------------------------------------------------------------*/
 /* 5. Typography */

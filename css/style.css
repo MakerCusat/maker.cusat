@@ -1,4 +1,4 @@
-/* Namari Landing Page v.1.1.0 Style Index - a free landing page by shapingrain.com
+/* 
 
 1. Default and Reset styles
 - 1.1 Input Elements
@@ -780,6 +780,10 @@ h6 {
 
 #banner {
     background-size: cover;
+
+}
+#banner1 {
+    background-size: cover;
 }
 
 #banner-content.row {
@@ -1554,6 +1558,7 @@ blockquote {
     content: "\f106";
     opacity: 1;
 }
+
 
 /*Preloader*/
 
