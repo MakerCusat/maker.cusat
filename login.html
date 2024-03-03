@@ -4,12 +4,56 @@
     <meta charset="UTF-8">
 
     <!--Page Title-->
-    <title>Join Us-Maker</title>
+    <title>Maker</title>
 
     <!--Meta Keywords and Description-->
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      .container {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      .error-message {
+        color: red;
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
 
     <!--Favicon-->
     <link rel="shortcut icon" href="images/favicon.ico" title="Favicon"/>
@@ -104,24 +148,29 @@
                     </aside>
 
                     <!--Main Navigation-->
-                    <nav >
-                        <ul >
+                    <nav>
+                        <ul>
                             <li>
-                                <a href="index.html">Home</a>
+                                <a  href="index.html" >Home</a>
                             </li>
                            <!-- <li>
                                 <a href="#about">About</a>
                             </li>-->
-                           
-                            <!--<li>
-                                <a href="#services">Services</a>
-                            </li>-->
-                            
-                            <li>
-                                <a href="login.html">Projects</a>
+                           <!-- <li>
+                                <a href="#gallery">Gallery</a>
                             </li>
                             <li>
-                                <a href="#pricing">Join Us</a>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#testimonials">Testimonials</a>
+                            </li>
+                        -->
+                            <li>
+                                <a class="nav-link" href="login.html">Projects</a>
+                            </li>
+                            <li>
+                                <a  href="joinus.html" >Join Us</a>
                             </li>
                         </ul>
                     </nav>
@@ -140,20 +189,46 @@
             <div class="col-38">
 
                 <div class="section-heading">
-                    <h1>Join Us Today</h1>
-                    <h2>Don't miss out on the opportunity to be part of MAKERS CUSAT – the community that's redefining innovation and creation. Whether you're driven by a passion for technology, a desire to learn, or the thrill of building something new, MAKERS CUSAT is the place to be. Connect with us today, and let's embark on a journey of making, creating, and learning together. Join the MAKERS CUSAT community and turn your ideas into reality! Are you ready to innovate, create, and learn? Join MAKERS CUSAT today!</h2>
+                    <h1>Welcome Back!</h1>
+                    <h2>Login to access all the contents</h2>
+                    
+                    <div class="container">
+                        <h2>Login</h2>
+                        
+                        <form id="loginForm" onsubmit="return false;">
+                          <input type="text" id="username" name="username" placeholder="Username" required>
+                          <input type="password" id="password" name="password" placeholder="Password" required>
+                          <input type="submit" value="Login">
+                        </form>
+                        <div class="error-message" id="errorMessage" style="display: none;">Invalid credentials</div>
+                      </div>
+                    
+                      <script>
+                        document.getElementById('loginForm').addEventListener('submit', function() {
+                          var username = document.getElementById('username').value;
+                          var password = document.getElementById('password').value;
+                          var errorMessage = document.getElementById('errorMessage');
+                    
+                          // Always display "Invalid credentials" message
+                          errorMessage.style.display = 'block';
+                    
+                          // Prevent form submission
+                          return false;
+                        });
+                      </script>
                 </div>
+                <h2>Not Registered ? <a href="joinus.html" class="button">Join Us Now</a></h2>
 
                 <!--Call to Action-->
-              <!--  <a href="#" class="button">START MAKING TODAY</a>-->
+                
                 <!--End Call to Action-->
 
             </div>
 
         </div><!--End of Row-->
     </header>
-    <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/appZU033mJA0JcF8n/shraV1tEjUrMZGrqL?backgroundColor=purpleDusty" frameborder="0" onmousewheel="" width="100%" height="1096.2" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
+        
 
     <!--Footer-->
     <footer id="landing-footer" class="clearfix">
