@@ -233,40 +233,7 @@
 
                 </div>
                 <div class="col-2-3">
-                    <style>
-                        #myIframe {
-                          width: 100%;
-                          height: 100%;
-                          border: none;
-                          overflow: hidden; /* Hide any content that overflows the iframe */
-                        }
-                      </style>
-                      
-                      <iframe id="myIframe" src="https://docs.google.com/forms/d/e/1FAIpQLSd6Ga50iC0VeDO9qzFbhysLVocv0UwLVpw6Zv_D0CntrwA0fA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading…</iframe>
-                      
-                      <script>
-                        // Function to resize the iframe height based on its content
-                        function resizeIframe() {
-                          var iframe = document.getElementById('myIframe');
-                          var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-                      
-                          // Get the maximum of the scroll height, client height, and offset height
-                          var contentHeight = Math.max(
-                            innerDoc.body.scrollHeight,
-                            innerDoc.body.clientHeight,
-                            innerDoc.body.offsetHeight
-                          );
-                      
-                          // Set the iframe's height to the calculated content height
-                          iframe.style.height = contentHeight + 'px';
-                        }
-                      
-                        // Call the resize function when the iframe has loaded
-                        document.getElementById('myIframe').onload = function() {
-                          var innerDoc = this.contentDocument || this.contentWindow.document;
-                          innerDoc.addEventListener('DOMContentLoaded', resizeIframe);
-                        };
-                      </script>
+                    <iframe id="myIframe" src="https://docs.google.com/forms/d/e/1FAIpQLSd6Ga50iC0VeDO9qzFbhysLVocv0UwLVpw6Zv_D0CntrwA0fA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading…</iframe>
                       
                       
                       
